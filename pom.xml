@@ -6,7 +6,15 @@
 	<artifactId>PatientSignUp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>PatientSignUp.Bronto</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
 	<dependencies>
+
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -54,7 +62,6 @@
 			<artifactId>extentreports</artifactId>
 			<version>2.41.2</version>
 		</dependency>
-
-
+		
 	</dependencies>
 </project>
