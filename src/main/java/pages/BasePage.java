@@ -15,12 +15,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
+import org.apache.log4j.Logger;
 public class BasePage {
 	
 	public  WebDriver driver;
 	public Properties prop;
-	 
+	Logger log = Logger.getLogger(BasePage.class);
 	 @BeforeClass
 	
 	 public void initialize() throws IOException{
@@ -30,8 +30,8 @@ public class BasePage {
 		 readConfig();
 		 System.setProperty("webdriver.chrome.driver","drivers\\chromedriver\\chromedriver.exe");
 		 driver = new ChromeDriver();
-		 System.out.println("Browser Initialised");
-
+		 //System.out.println("Browser Initialised");
+		 log.info("Chrome Initialised");
 		 
 	 //To maximize browser
 	            driver.manage().window().maximize();
@@ -41,8 +41,9 @@ public class BasePage {
 	        	
 	 //To open Bronto Application
 	            driver.get(prop.getProperty("url"));
-	            System.out.println("Navigated to bronto application");
-	           
+	            //System.out.println("Navigated to bronto application");
+	            log.info("Naviated to Bronto Home Page");
+	            
 	           
 	            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	            
@@ -55,8 +56,8 @@ public class BasePage {
 	            
 	  //To click Login button            
 	            driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/header/div/div/div[4]/div/button/span[1]")).click();
-	            System.out.println("Click on login ");
-	            
+	            //System.out.println("Click on login ");
+	            log.info("Click on login/Register button");
 	          
 	 
 	 }
@@ -69,6 +70,7 @@ public class BasePage {
 		 
 	        driver.quit();
 	        //System.out.println("Browser Closed");
+	        log.info("Browser closed");
 	        
 	    }
 	

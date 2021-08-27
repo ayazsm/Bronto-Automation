@@ -14,12 +14,12 @@
       <![CDATA[<img src="C:\Users\Codetru\eclipselevel\pom\screenshots\screenshot1.png"/>]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-08-27T10:19:41 IST" name="Suite" finished-at="2021-08-27T10:20:00 IST" duration-ms="18223">
+  <suite started-at="2021-08-27T15:04:26 IST" name="Suite" finished-at="2021-08-27T15:04:52 IST" duration-ms="26581">
     <groups>
     </groups>
-    <test started-at="2021-08-27T10:19:41 IST" name="Test" finished-at="2021-08-27T10:20:00 IST" duration-ms="18223">
+    <test started-at="2021-08-27T15:04:26 IST" name="Test" finished-at="2021-08-27T15:04:52 IST" duration-ms="26581">
       <class name="test.PatientLoginTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:test.PatientLoginTest@61df66b6]" started-at="2021-08-27T10:19:51 IST" name="initialize" finished-at="2021-08-27T10:19:59 IST" duration-ms="7759" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:test.PatientLoginTest@54d9d12d]" started-at="2021-08-27T15:04:37 IST" name="initialize" finished-at="2021-08-27T15:04:52 IST" duration-ms="14128" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[<a target="_blank" href="C:\Users\Codetru\eclipselevel\pom\screenshots\screenshot1.png">Screenshot1</a>]]>
@@ -29,17 +29,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="loginTest()[pri:0, instance:test.PatientLoginTest@61df66b6]" started-at="2021-08-27T10:19:59 IST" name="loginTest" finished-at="2021-08-27T10:19:59 IST" duration-ms="367" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:test.PatientLoginTest@54d9d12d]" started-at="2021-08-27T15:04:52 IST" name="loginTest" finished-at="2021-08-27T15:04:52 IST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:test.PatientLoginTest@61df66b6]" started-at="2021-08-27T10:19:59 IST" name="TeardownTest" finished-at="2021-08-27T10:20:00 IST" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:test.PatientLoginTest@54d9d12d]" started-at="2021-08-27T15:04:52 IST" name="TeardownTest" finished-at="2021-08-27T15:04:52 IST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeardownTest -->
       </class> <!-- test.PatientLoginTest -->
       <class name="test.PatientSignUpTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:test.PatientSignUpTest@291ae]" started-at="2021-08-27T10:19:41 IST" name="initialize" finished-at="2021-08-27T10:19:49 IST" duration-ms="8121" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:test.PatientSignUpTest@3c41ed1d]" started-at="2021-08-27T15:04:26 IST" name="initialize" finished-at="2021-08-27T15:04:36 IST" duration-ms="10514" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[<a target="_blank" href="C:\Users\Codetru\eclipselevel\pom\screenshots\screenshot1.png">Screenshot1</a>]]>
@@ -49,11 +49,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="SignUpTest()[pri:0, instance:test.PatientSignUpTest@291ae]" started-at="2021-08-27T10:19:50 IST" name="SignUpTest" finished-at="2021-08-27T10:19:50 IST" duration-ms="884" status="PASS">
+        <test-method signature="SignUpTest()[pri:0, instance:test.PatientSignUpTest@3c41ed1d]" started-at="2021-08-27T15:04:36 IST" name="SignUpTest" finished-at="2021-08-27T15:04:37 IST" duration-ms="982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignUpTest -->
-        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:test.PatientSignUpTest@291ae]" started-at="2021-08-27T10:19:50 IST" name="TeardownTest" finished-at="2021-08-27T10:19:51 IST" duration-ms="763" status="PASS">
+        <test-method is-config="true" signature="TeardownTest()[pri:0, instance:test.PatientSignUpTest@3c41ed1d]" started-at="2021-08-27T15:04:37 IST" name="TeardownTest" finished-at="2021-08-27T15:04:37 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeardownTest -->
