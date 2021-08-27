@@ -1,15 +1,9 @@
 package pages;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.Reporter;
 
 public class PatientSignUpPage extends BasePage
 {
@@ -19,14 +13,17 @@ public class PatientSignUpPage extends BasePage
 	public PatientSignUpPage(WebDriver driver) {
 		
 		this.driver=driver;
+		//logger=Logger.getLogger(PatientSignUpPage.class.getName());
 		
 	}
+	//click on login as patient button
 	public void loginAsPatient(){
 
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[1]/div/div/div[2]/div/div/div/div/button[2]/span[1]")).click();
 		System.out.println("click on login as patient");
+		//logger.info("click on login as patient");
 	}
-	
+	//click on SignUpNow button
 	public void signUpnowButton(){
 
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[1]/div/div/div[2]/div/div/div/div/div[4]/div/div/div/p[2]")).click();
@@ -39,12 +36,14 @@ public class PatientSignUpPage extends BasePage
 		driver.findElement(By.name("name")).sendKeys(strenterName);
 		System.out.println("Enter name");
 	}
+	
 	//Enter With email
 	public void enterEmail(String strenterEmail){
 
 		driver.findElement(By.name("email")).sendKeys(strenterEmail);
 		System.out.println("Enter email");
 	}
+	
 	//Enter Password
 	public void enterPassword(String strenterPassword) {
 			

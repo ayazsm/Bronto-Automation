@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -18,18 +17,20 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BasePage {
+	
 	public  WebDriver driver;
-	 public Properties prop;  //Create obj for properties
+	public Properties prop;
 	 
 	 @BeforeClass
+	
 	 public void initialize() throws IOException{
 		 
-	
+	     
 		 //Calling config file obj
 		 readConfig();
 		 System.setProperty("webdriver.chrome.driver","drivers\\chromedriver\\chromedriver.exe");
 		 driver = new ChromeDriver();
-		 //System.out.println("Browser Initialised");
+		 System.out.println("Browser Initialised");
 
 		 
 	 //To maximize browser
@@ -40,7 +41,8 @@ public class BasePage {
 	        	
 	 //To open Bronto Application
 	            driver.get(prop.getProperty("url"));
-	            //System.out.println("Navigated to bronto application");
+	            System.out.println("Navigated to bronto application");
+	           
 	           
 	            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	            
@@ -53,7 +55,7 @@ public class BasePage {
 	            
 	  //To click Login button            
 	            driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/header/div/div/div[4]/div/button/span[1]")).click();
-	            //System.out.println("Click on login ");
+	            System.out.println("Click on login ");
 	            
 	          
 	 
@@ -82,6 +84,8 @@ public class BasePage {
 			e.printStackTrace();
 		}
 	 }
+	 
+	 
 
 
 }
